@@ -4,7 +4,6 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
 new PureCounter({
     // Setting that can't' be overriden on pre-element
     selector: ".purecounter", // HTML query selector for spesific element
@@ -24,6 +23,12 @@ new PureCounter({
     separator: false // This will enable/disable comma separator for thousands. Use it for set the symbol too [boolean|char|string]
 });
 
+/**
+* Template Name: Vesperr - v4.2.0
+* Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 (function() {
     "use strict";
   
@@ -133,10 +138,18 @@ new PureCounter({
     /**
      * Mobile nav toggle
      */
-    on('click', '.mobile-nav-toggle', function(e) {
-      select('#navbar').classList.toggle('navbar-mobile')
-      this.classList.toggle('bi-list')
-      this.classList.toggle('bi-x')
+    on('click', '.mobile-nav-toggle', function (e) {
+        if (select('.navbar')) {
+            select('.navbar').classList.replace('navbar','navbar-mobile')
+            this.classList.toggle('bi-x')
+            this.classList.toggle('bi-list')
+            this.classList.add('bi-colour')
+        } else if (select('.navbar-mobile')) {
+            select('.navbar-mobile').classList.replace('navbar-mobile','navbar')
+            this.classList.toggle('bi-x')
+            this.classList.toggle('bi-list')
+            this.classList.remove('bi-colour')
+        }
     })
   
     /**
