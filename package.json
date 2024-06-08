@@ -11,9 +11,16 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
+    "@srexi/purecounterjs": "^1.5.0",
+    "aos": "^2.3.4",
     "astro": "^4.9.3",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "boxicons": "^2.1.4",
+    "glightbox": "^3.3.0",
+    "isotope-layout": "^3.0.6",
+    "remixicon": "^4.2.0",
+    "swiper": "6.5.9",
     "typescript": "^5.4.5"
   }
 }

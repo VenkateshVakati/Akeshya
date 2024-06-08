@@ -1,26 +1,28 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../scripts/styles.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+// import "aos/dist/aos.css";
+import "glightbox/dist/css/glightbox.min.css";
+import "swiper/swiper-bundle.min.css";
+import "remixicon/fonts/remixicon.css";
+import "boxicons/css/boxicons.min.css";
 ---
 
 <Layout title="Akeshya">
-  <head>
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
   <body
     data-aos-easing="ease-in-out"
     data-aos-duration="1000"
     data-aos-delay="0"
   >
-    <noscript
-      ><iframe
+    <noscript>
+      <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-5H76NZR"
         height="0"
         width="0"
-        style="display:none;visibility:hidden"></iframe></noscript
+        style="display:none;visibility:hidden">
+      </iframe>
+    </noscript
     >
     <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
@@ -704,6 +706,20 @@ import "../scripts/styles.css";
     >
     <script>
       import "../scripts/main.js";
+      import "bootstrap/dist/js/bootstrap.bundle.min.js";
+      // import "aos/dist/aos.js";
+      import "glightbox/dist/js/glightbox.min.js";
+      import "isotope-layout/dist/isotope.pkgd.min.js";
+      // import "purecounterjs/dist/purecounter.js";
+      import "swiper/swiper-bundle.min.js";
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-B1R5LB296V");
     </script>
   </body>
 </Layout>
