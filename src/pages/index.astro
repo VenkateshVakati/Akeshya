@@ -2,14 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 import "../scripts/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "aos/dist/aos.css";
-import "glightbox/dist/css/glightbox.min.css";
 import "swiper/swiper-bundle.min.css";
+// import "aos/dist/aos.css"
 import "remixicon/fonts/remixicon.css";
 import "boxicons/css/boxicons.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css"
+import "glightbox/dist/css/glightbox.min.css"
 ---
 
 <Layout title="Akeshya">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1R5LB296V"></script>  
+  </head>
   <body
     data-aos-easing="ease-in-out"
     data-aos-duration="1000"
@@ -22,8 +26,7 @@ import "boxicons/css/boxicons.min.css";
         width="0"
         style="display:none;visibility:hidden">
       </iframe>
-    </noscript
-    >
+    </noscript>
     <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
         <div class="logo">
@@ -89,9 +92,9 @@ import "boxicons/css/boxicons.min.css";
             />
           </div>
         </div>
-      </div>
+    </div>
     </section>
-    <main id="main">
+
       <!-- ======= Clients Section ======= -->
       <section id="clients" class="clients clients">
         <div class="container">
@@ -159,7 +162,7 @@ import "boxicons/css/boxicons.min.css";
       </section><!-- End Clients Section -->
 
       <!-- ======= About Us Section ======= -->
-      <section id="about" class="about">
+      <section id="about" class="about">  
         <div class="container">
           <div class="section-title aos-init" data-aos="fade-up">
             <h2>About Us</h2>
@@ -311,7 +314,7 @@ import "boxicons/css/boxicons.min.css";
                 data-aos-delay="100"
               >
                 <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                <h4 class="title"><a href="">Design</a></h4>
+                <h4 class="title"><a href="" style="text-decoration: none;">Design</a></h4>
                 <p class="description">
                   Our web design services can assist you in reclaiming your
                   company's online image. Your business will flourish on the
@@ -330,7 +333,7 @@ import "boxicons/css/boxicons.min.css";
                 data-aos-delay="200"
               >
                 <div class="icon"><i class="bx bx-file"></i></div>
-                <h4 class="title"><a href="">Development</a></h4>
+                <h4 class="title"><a href="" style="text-decoration: none;">Development</a></h4>
                 <p class="description">
                   Our development team can construct platforms to help your
                   business thrive by creating powerful customised solutions
@@ -349,7 +352,7 @@ import "boxicons/css/boxicons.min.css";
                 data-aos-delay="300"
               >
                 <div class="icon"><i class="bx bx-world"></i></div>
-                <h4 class="title"><a href="">Marketing</a></h4>
+                <h4 class="title"><a href="" style="text-decoration: none;">Marketing</a></h4>
                 <p class="description">
                   A beautiful website is the foundation of effective marketing.
                   Our customers achieve success where it counts—in the real
@@ -368,7 +371,7 @@ import "boxicons/css/boxicons.min.css";
                 data-aos-delay="400"
               >
                 <div class="icon"><i class="bx bx-tachometer"></i></div>
-                <h4 class="title"><a href="">Support</a></h4>
+                <h4 class="title"><a href="" style="text-decoration: none;" >Support</a></h4>
                 <p class="description">
                   Since the beginning, we at Akeshya have specialised in website
                   maintenance. We recognise the significance of having your
@@ -401,7 +404,7 @@ import "boxicons/css/boxicons.min.css";
                 data-aos-delay="100"
               >
                 <div class="card-body">
-                  <h5 class="card-title"><a href="">1. Planning</a></h5>
+                  <h5 class="card-title"><a href="" style="text-decoration: none;">1. Planning</a></h5>
                   <p class="card-text">
                     We help you turn all of your ideas into a digital product
                     that meets all of your requirements. We begin each project
@@ -420,7 +423,7 @@ import "boxicons/css/boxicons.min.css";
                 data-aos-delay="200"
               >
                 <div class="card-body">
-                  <h5 class="card-title"><a href="">2. Design</a></h5>
+                  <h5 class="card-title"><a href="" style="text-decoration: none;">2. Design</a></h5>
                   <p class="card-text">
                     We build our websites carefully through a series of
                     workshops, wire-framing, and user experience (UX) sessions,
@@ -438,7 +441,7 @@ import "boxicons/css/boxicons.min.css";
                 data-aos-delay="100"
               >
                 <div class="card-body">
-                  <h5 class="card-title"><a href="">3. Development</a></h5>
+                  <h5 class="card-title"><a href="" style="text-decoration: none;">3. Development</a></h5>
                   <p class="card-text">
                     We provide extensive front-end and back-end development that
                     allows your idea to stand alone. Our in-house developers
@@ -457,7 +460,7 @@ import "boxicons/css/boxicons.min.css";
                 data-aos-delay="200"
               >
                 <div class="card-body">
-                  <h5 class="card-title"><a href=""></a>4. Marketing</h5>
+                  <h5 class="card-title"><a href="" style="text-decoration: none;"></a>4. Marketing</h5>
                   <p class="card-text">
                     We come up with ideas and campaigns to help your business
                     prosper online. Our campaigns and virtual approach have a
@@ -490,77 +493,74 @@ import "boxicons/css/boxicons.min.css";
             <div class="col-lg-3 col-md-4">
               <div class="icon-box">
                 <i class="ri-window-line" style="color: #ffbb2c;"></i>
-                <h3><a href="">Web design</a></h3>
+                <h3><a href="" style="text-decoration: none;">Web design</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
               <div class="icon-box">
                 <i class="ri-code-box-line" style="color: #5578ff;"></i>
-                <h3><a href="">Development</a></h3>
+                <h3><a href="" style="text-decoration: none;">Development</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
               <div class="icon-box">
                 <i class="ri-creative-commons-by-line" style="color: #e80368;"
                 ></i>
-                <h3><a href="">Branding</a></h3>
+                <h3><a href="" style="text-decoration: none;">Branding</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
               <div class="icon-box">
                 <i class="ri-play-circle-line" style="color: #e361ff;"></i>
-                <h3><a href="">Media buying</a></h3>
+                <h3><a href="" style="text-decoration: none;">Media buying</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
                 <i class="ri-search-eye-line" style="color: #47aeff;"></i>
-                <h3><a href="">Search engine</a></h3>
+                <h3><a href="" style="text-decoration: none;">Search engine</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
                 <i class="ri-todo-line" style="color: #ffa76e;"></i>
-                <h3><a href="">Brand strategy</a></h3>
+                <h3><a href="" style="text-decoration: none;">Brand strategy</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
                 <i class="ri-map-pin-line" style="color: #dbce11;"></i>
-                <h3><a href="">Local search marketing</a></h3>
+                <h3><a href="" style="text-decoration: none;">Local search marketing</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
-                <i
-                  class="ri-bar-chart-grouped-line"
-                  "=""
-                  style="color: #4233ff;"></i>
-                <h3><a href="">Lead Tracking &amp; Management </a></h3>
+                <i class="ri-bar-chart-grouped-line" "=""style="color: #4233ff;"></i>
+                <h3><a href="" style="text-decoration: none;">Lead Tracking &amp; Management </a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
                 <i class="ri-contacts-book-line" style="color: #b2904f;"></i>
-                <h3><a href="">Contact management</a></h3>
+                <h3><a href="" style="text-decoration: none;">Contact management</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
                 <i class="ri-disc-line" style="color: #b20969;"></i>
-                <h3><a href="">Media management</a></h3>
+                <h3><a href="" style="text-decoration: none;">Media management</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
                 <i class="ri-calendar-event-line" style="color: #ff5828;"></i>
-                <h3><a href="">Social scheduling</a></h3>
+                <h3><a href="" style="text-decoration: none;">Social scheduling</a></h3>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 mt-4">
               <div class="icon-box">
                 <i class="ri-advertisement-fill" style="color: #29cc61;"></i>
-                <h3><a href="">Ad retargeting</a></h3>
+                <h3><a href="" style="text-decoration: none;">Ad retargeting</a></h3>
               </div>
             </div>
           </div>
@@ -676,7 +676,7 @@ import "boxicons/css/boxicons.min.css";
           </div>
         </div>
       </section><!-- End Contact Section -->
-    </main>
+
     <footer id="footer">
       <div class="container">
         <div class="d-flex justify-content-between">
@@ -686,13 +686,13 @@ import "boxicons/css/boxicons.min.css";
           <div>
             <ul class="d-flex list-unstyled">
               <li class="px-3">
-                <a href="./Terms and conditions.pdf">Terms and conditions</a>
+                <a href="./Terms and conditions.pdf" style="text-decoration: none;">Terms and conditions</a>
               </li>
               <li class="px-3">
-                <a href="./Refund policy.pdf">Refund policy</a>
+                <a href="./Refund policy.pdf" style="text-decoration: none;">Refund policy</a>
               </li>
               <li class="px-3">
-                <a href="./Privacy policy.pdf">Privacy policy</a>
+                <a href="./Privacy policy.pdf" style="text-decoration: none;">Privacy policy</a>
               </li>
             </ul>
           </div>
@@ -706,20 +706,14 @@ import "boxicons/css/boxicons.min.css";
     >
     <script>
       import "../scripts/main.js";
-      import "bootstrap/dist/js/bootstrap.bundle.min.js";
-      // import "aos/dist/aos.js";
-      import "glightbox/dist/js/glightbox.min.js";
-      import "isotope-layout/dist/isotope.pkgd.min.js";
-      // import "purecounterjs/dist/purecounter.js";
-      import "swiper/swiper-bundle.min.js";
-
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-B1R5LB296V");
+      // import "bootstrap/dist/js/bootstrap.bundle.min.js";
+      import "aos/dist/aos.js";
+      import "glightbox/dist/js/glightbox.js";
+      import "jquery/dist/jquery.min.js"
+      import "swiper/swiper-bundle.js";
+      import "../scripts/purecounter.js";
     </script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
   </body>
 </Layout>

@@ -19,6 +19,7 @@
     "boxicons": "^2.1.4",
     "glightbox": "^3.3.0",
     "isotope-layout": "^3.0.6",
+    "jquery": "^3.7.1",
     "remixicon": "^4.2.0",
     "swiper": "6.5.9",
     "typescript": "^5.4.5"
