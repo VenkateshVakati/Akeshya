@@ -138,7 +138,7 @@ new PureCounter({
     /**
      * Mobile nav toggle
      */
-    on('click', '.mobile-nav-toggle', function (e) {
+    on('click', '.mobile-nav-toggle', function () {
         if (select('.navbar')) {
             select('.navbar').classList.replace('navbar','navbar-mobile')
             this.classList.toggle('bi-x')
