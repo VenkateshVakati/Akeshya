@@ -171,10 +171,11 @@ new PureCounter({
   
         let navbar = select('#navbar')
         if (navbar.classList.contains('navbar-mobile')) {
-          navbar.classList.remove('navbar-mobile')
+          navbar.classList.replace('navbar-mobile','navbar')
           let navbarToggle = select('.mobile-nav-toggle')
           navbarToggle.classList.toggle('bi-list')
           navbarToggle.classList.toggle('bi-x')
+          navbarToggle.classList.remove('bi-colour')
         }
         scrollto(this.hash)
       }
