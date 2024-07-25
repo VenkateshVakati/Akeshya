@@ -1,0 +1,7 @@
+steps:
+  - name: ubuntu
+    args:
+      - echo
+      - hello world
+options:
+  logging: CLOUD_LOGGING_ONLY
