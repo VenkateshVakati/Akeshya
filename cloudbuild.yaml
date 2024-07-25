@@ -5,6 +5,7 @@ steps:
     args:
       - '-c'
       - |
+        gcloud config set project "global-grammar-426419-v9"
         gcloud compute ssh --zone "us-central1-c" "demo1" --project "global-grammar-426419-v9"<< EOF
           sudo su -
           echo "Updating package list and installing Nginx"
