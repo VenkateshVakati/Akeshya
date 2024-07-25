@@ -1,7 +1,64 @@
 steps:
-  - name: ubuntu
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: 'installing nginx'
+    entrypoint: 'bash'
     args:
-      - echo
-      - hello world
+      - '-c'
+      - |
+        gcloud compute ssh --zone "us-central1-c" "demo1" --project "global-grammar-426419-v9"<< EOF
+          sudo su -
+          echo "Updating package list and installing Nginx"
+          sudo apt-get update
+          sudo apt-get install -y nginx
+        EOF
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: 'cloning the repository'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud compute ssh --zone "us-central1-c" "demo1" --project "global-grammar-426419-v9"<< EOF
+          sudo su -
+          echo "Cloning the repository"
+          git clone https://github.com/VenkateshVakati/Akeshya.git /var/www
+          cd /var/www/Akeshya
+        EOF
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: 'installing npm & building the application'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud compute ssh --zone "us-central1-c" "demo1" --project "global-grammar-426419-v9"<< EOF
+          sudo su -
+          sudo apt-get install -y npm
+          cd /var/www/Akeshya
+          npm i
+          npm build
+        EOF
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: 'assigning server configuration'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud compute ssh --zone "us-central1-c" "demo1" --project "global-grammar-426419-v9"<< EOF
+          sudo su -
+          cd /etc/nginx/sites-enabled
+          echo "server {
+                      listen 80;
+                      listen [::]:80;
+
+                      server_name example.ubuntu.com;
+
+                      root /Akeshya/dist;
+                      index index.html;
+
+                      location / {
+                          try_files $uri $uri/ =404;
+                      }
+                     }" > default
+          sudo service nginx restart
+        EOF
 options:
   logging: CLOUD_LOGGING_ONLY
